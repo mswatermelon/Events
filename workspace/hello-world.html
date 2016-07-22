@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+<meta charset="utf-8">
+<title>Hello...</title>
+<style>
+	#menu {
+		width: 30%;
+		min-width: 216px;
+	}
+	
+	#div{
+		cursor: pointer;
+    	list-style-type: none;
+    	margin-top: 20px;
+	}
+	
+	p {
+		padding:0px 10px 0px 10px;
+	}
+	
+	.row {
+        background: #e7e7e7;
+        vertical-align: middle;
+        border-radius:100px;
+        color: #4f4f4f;
+        height: 50px;
+		overflow: hidden;
+        margin: 0;
+	}
+	
+	.grey {
+        background: #696666;
+        color: #FFFFFF;
+	}
+	
+	.orange {
+        background: #ff8663;
+        color: #FFFFFF;
+	}
+	
+	.off:after {
+	    content: '';
+        position: relative;
+        top: 15px;
+        float: right;
+        border-top: 7px solid #ff8663;
+        border-left: 7px solid transparent;
+        border-right: 7px solid transparent;
+	}
+	
+	.on:after {
+	    content: '';
+        position: relative;
+        top: 15px;
+        float: right;
+        border-bottom: 7px solid #ffffff;
+        border-left: 7px solid transparent;
+        border-right: 7px solid transparent;
+	}
+	
+	.main_img {
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+	}
+	
+	.anim {
+		overflow: hidden;
+		transition: all 1s;
+		height: 0px;
+		padding: 0;
+        background: #e7e7e7;
+        border-radius:15px;
+        position: relative;
+    	padding-top: 30px;
+    	top: -40px;
+    	z-index: -1;
+	}
+
+</style>
+</head>
+<body>
+<div id="menu">
+	<img class="main_img" src="images/test.png">
+	<div id="div">
+		<div class="active">
+			<p class="active row grey off">Основы языка и как на на нём говорить правильно</p>
+			<div class="anim">
+				<p>Лексическая структура</p>
+				<p>Типы данных, значения и переменные</p>
+				<p>Выражения и операторы инструкций</p>
+			</div>
+		</div>
+	
+		<div class="active"> 
+			<p class="active row off">Функции</p>
+			<div class="anim">
+				<p>1</p>
+				<p>2</p>
+				<p>3</p>
+			</div>
+		</div>
+	
+	
+		<div class="active">
+			<p class="active row grey off">Обработка ошибок и отладка</p>
+			<div class="anim">
+				<p>1</p>
+				<p>2</p>
+				<p>3</p>
+			</div>
+		</div>
+	
+	
+		<div class="active"> 
+			<p class="active row off">Объекты и массивы</p>
+			<div class="anim">
+				<p>1</p>
+				<p>2</p>
+				<p>3</p>
+			</div>
+		</div>
+	
+	
+		<div class="active"> 
+			<p class="active row grey off">События</p>
+			<div class="anim">
+				<p>1</p>
+				<p>2</p>
+				<p>3</p>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
